@@ -9,51 +9,69 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="./style.css">
 	<title>Assignment-3</title>
+	
 </head>
 
 <body>
-	<nav
-		class="flex flex-cols-1 md:flex-cols-2 justify-center rounded-full items-center relative bg-red-500 my-12 mx-40 px-12 py-8 lg:max-w-screen-2xl min-h-full border gap-4">
-		<div class="flex  items-center list-none gap-5 text-white ">
-			<li>Home</li>
-			<li>About Us</li>
-			<li>Shop</li>
-			<li>All Fruits</li>
-		</div>
-		<div class="flex justify-center items-center gap-2 text-white ml-4 mx-auto">
-			<img src="./images/logo.png" alt="">
-			<h3 class="text-2xl">Fruit Brust</h3>
-		</div>
-		<div>
-			<input class="p-2 ml-20 rounded-full justify-end" type="text" placeholder="search here">
-		</div>
-		<div class="absolute -inset-left-2 right-20">
-			<i class="fa-solid fa-magnifying-glass"></i>
-		</div>
+	<!-- navbar section  -->
+	<nav class="max-w-screen-xl px-12 py-7 mx-auto">
+		<div class=" flex navbar   bg-red-500  justify-center gap-6 rounded-full relative">
+			<div class=" flex-1 hidden md:flex list-none gap-6 justify-center md:items-center">
+			  <li>Home</li>
+			  <li>About Us</li>
+			  <li>Shop</li>
+			  <li>All Fruits</li>
+			</div>
+			<div class="gap-2 justify-center flex-1">
+			  <div class="dropdown dropdown-end flex-1">
+				<label>
+				  <div class=" flex items-center justify-center gap-4">
+					<div>
+						<img src="./images/logo.png" />
+					</div>
+					<div>
+						<p>Fruit Brust</p>
+					</div>
+				  </div>
+				</label>
+			  </div>
+			</div>
+			<div class="flex-1 justify-center hidden md:block ml-40">
+				 <div class="from-control  p-5 relative">
+					<input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+					<div class="absolute right-24 top-8">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				  </div>
+			</div>
+			
+		  </div>
 	</nav>
 	<!-- Hero section -->
-	<section class=" py-16 mx-40 max-w-screen-xl h-full relative">
-		<div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+    <section class=" p-14  max-w-screen-xl h-full relative">
+		<div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
 			<div class="hero-overlay bg-opacity-60"></div>
 			<div class="hero-content text-center text-neutral-content pb-5">
-				<div class="mb-16">
-					<h1 class="mb-5 text-7xl font-bold text-white">Exotic tastes at your doorstep</h1>
-					<p class="mb-5 text-white">We supply highly quality organic products</p>
-					<button class="border-none rounded p-3 text-white bg-red-500">Shop Now</button>
+				<div class="mb-16 lg:text-white ">
+					<h1 class="mb-5 text-5xl  font-extrabold ">Exotic tastes at your doorstep</h1>
+					<p class="mb-5  text-3xl">We supply highly quality organic products</p>
+					<button class="border-none rounded p-3  bg-red-500">Shop Now</button>
 				</div>
 			</div>
 		</div>
 
 	</section>
-	<!-- Exotic text section -->
-	<div class="flex ml-60 absolute  -bottom-96  left-16 my-16 h-40 justify-start items-center bg-white">
-		<div class="flex gap-12 px-14 py-20 max-w-6xl justify-end items-center">
+	<!-- practical sector -->
+	
+	<!-- Exotic sextion started -->
+	 <div class=" lg:flex hidden ml-48 absolute -bottom-96 left-16 my-16 h-48 items-center bg-red-100">
+		<div class="flex  gap-12 px-14 py-24 max-w-6xl  items-center">
 			<div>
 				<img class="w-16" src="./images/fruit1.png" alt="">
 				<p class="text-center">Strawberry</p>
 			</div>
 			<div>
-				<img class="w-16" src="./images/fruit2.png" alt="">
+				<img class="w-16 " src="./images/fruit2.png" alt="">
 				<p class="text-center">Orange</p>
 			</div>
 			<div>
@@ -69,7 +87,7 @@
 				<p class="text-center">Mango</p>
 			</div>
 		</div>
-	</div>
+	</div> 
 	<!-- End of the exotic text section -->
 	<section>
 		<div class="flex flex-col  md:flex-row my-32 mx-auto  lg:justify-evenly items-center  md:py-9 ">
@@ -187,9 +205,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="justify-center items-center flex py-14 ">
+          <button class=" text-white rounded bg-red-500 p-5">Shop All</button>
+		</div>
 	</section>
 	<!-- Meet the team section -->
-	<section class=" md:max-w-screen-2xl my-16 min-h-screen bg-none p-10">
+	 <section class=" md:max-w-screen-2xl my-16 bg-none p-10">
 		<div class="">
 			<div class="hero min-h-screen"
 				style="background-image: url('./images/banner1.png');">
@@ -202,7 +223,7 @@
 						from 45 BC, making it over 2000 years old.</p>
 					</div>
 				</div>
-				<!-- team section  -->
+				<!-- Meet  the team section  -->
 				<div class=" grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:mt-40 p-8  text-white text-center">
 					<!-- member1 -->
 					<div>
@@ -313,13 +334,13 @@
 			<img src="./images/logo.png" alt="">
 			<p class="text-2xl">Fruit Brust</p>
 		</div>
-		<div class="flex justify-center items-center list-none gap-10 p-5">
+		<div class="lg:flex  flex-row justify-center items-center list-none gap-10 p-5">
 			<li>Home</li>
-			<li>About</li>
-			<li>Contuct</li>
-			<li>Blog</li>
-			<li>Service</li>
-			<li>Menu</li>
+			<li>About Us</li>
+			<li>Shop</li>
+			<li>All Fruits</li>
+			<li>Support</li>
+			<li>My Account</li>
 		</div>
 		 <div class="flex justify-center items-center gap-10 p-5 text-rose-600">
 			<i class="fa-brands fa-square-facebook"></i>
@@ -328,7 +349,7 @@
 		 </div>
 		
 	
-	</div>
+	</div> 
 </body>
 
 </html>
